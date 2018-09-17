@@ -6,7 +6,6 @@ class GoogleMap extends Component {
 
   render() {
     return (
-      // this.refs.map
       <div className="map">
         <ReactGoogleMapLoader
           params={{
