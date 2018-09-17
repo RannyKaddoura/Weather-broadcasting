@@ -7,11 +7,13 @@ import GoogleMap from '../components/google_map'
 class WeatherList extends Component {
 
   rendrWeather(cityData) {
+    if(!cityData){ return <tr className="ERROR"><span>WRONG CITY NAME</span></tr>}
+
     const name = cityData.city.name;
     const temp = _.map(cityData.list.map( weather => weather.main.temp ), (temp) => temp -273.15);
     const pressure = cityData.list.map( weather => weather.main.pressure);
     const humidity = cityData.list.map( weather => weather.main.humidity);
-    const { lon, lat } = cityData.city.coord // const lat = cityData.city.coord.lat; + const lon = cityData.city.coord.lon;
+    const { lon, lat } = cityData.city.coord // const lat = cityData.city.coord.lat; +++ const lon = cityData.city.coord.lon;
      
     return (
       <tr key={name}>
