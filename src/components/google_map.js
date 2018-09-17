@@ -3,16 +3,6 @@ import ReactGoogleMap from "react-google-map"
 import ReactGoogleMapLoader  from "react-google-maps-loader"
 
 class GoogleMap extends Component {
-  
-  // componentDidMount () {
-  //   new google.maps.Map(this.refs.map, {
-  //     zoom: 12,
-  //     center: {
-  //       lat: this.props.lat,
-  //       lon: this.props.lon
-  //     }
-  //   });
-  // }
 
   render() {
     return (
