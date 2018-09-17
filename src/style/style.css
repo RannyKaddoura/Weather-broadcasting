@@ -1,3 +1,13 @@
+body {
+  background-color: #4492eb  !important;
+  color: #fff;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.814) !important;
+  color: #000000 !important;
+}
+
 td svg {
   width: 16rem;
   height: 10.5rem;
@@ -8,4 +18,12 @@ td svg {
 td:first-child, th {
   vertical-align: middle !important;
   text-align: center !important;
+}
+.ERROR {
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  color: red;
+  letter-spacing: 0;
+  font-family: monospace, 'Courier New', Courier; 
 }
